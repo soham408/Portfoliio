@@ -1,11 +1,11 @@
 import React from 'react'
-// import Images from './src/assets/Images/html.jpg'
 
-export default function Techskills() {
+function Techskills() {
     return (
         
+        <div>
             <ul>
-                <h1 className='text-black text-6xl font-serif text-center pt-[100px]  '>Technical Skills</h1>
+                <h1 className='text-white text-6xl font-serif text-center pt-[100px]  '>Technical Skills</h1>
                 <li className='flex space-x-6 justify-center pt-[178px] pb-[100px]'>
 
                      {/* From Public Folder (Path Way) */}
@@ -47,8 +47,10 @@ export default function Techskills() {
                             
                 </li>
             </ul>
-        
+            </div>
         
       
 )
 }
+
+export default Techskills;

@@ -7,7 +7,7 @@ import {Link, NavLink} from 'react-router-dom'
 
     return (
         <>
-            <header className="bg-[#24855] shadow sticky z-50 top-0">
+            <header className="bg-[#002349] shadow sticky z-50 top-0">
             {/* <nav className="bg-white border-gray-200 px-4 lg:px-6 py-2.5"> */}
                 <div className="pt-5 flex flex-wrap justify-between items-center mx-auto max-w-screen-xl ">
                     <div className=''>

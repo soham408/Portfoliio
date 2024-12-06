@@ -19,11 +19,11 @@ function Github() {
   return (
     <>
     <div className='flex space-x-4 flex-center justify-center pt-[200px] pb-[100px]'>
-    <div className='font-serif flex items-center justify-center text-[grey] p-4 rounded-xl grid flex-col'>
-    <div className='text-black'> Name  : {data.name} </div>
-    <div className='text-black'> Twitter Username  : {data.twitter_username} </div>
-    <div className='text-black'> Github Followers : {data.followers} </div>
-    <div className='text-black'> Github followings : {data.following} </div>
+    <div className='font-serif flex items-center justify-center text-[white] p-4 rounded-xl grid flex-col'>
+    <div className='text-white'> Name  : {data.name} </div>
+    <div className='text-white'> Twitter Username  : {data.twitter_username} </div>
+    <div className='text-white'> Github Followers : {data.followers} </div>
+    <div className='text-white'> Github followings : {data.following} </div>
      </div>
 
      <div className='flex items-center justify-center grid  space-x-4'>
@@ -34,7 +34,7 @@ function Github() {
   )
 }
 
-export default Github
+export default Github;
 
 export const githubInfoLoader = async () => {
  const response = await fetch('https://api.github.com/users/soham408') 
