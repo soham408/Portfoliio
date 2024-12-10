@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 export default function Footer (){
 
         return (
-            <footer className="bg-[#002349]">
+            <footer className="bg-[#002349] py-6">
                 <div className="bg-lightblue mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
                     {/* <div className="md:flex md:justify-between">
                        
@@ -13,9 +13,9 @@ export default function Footer (){
                     </div> */}
                     <hr className="my-6 border-gray-200 sm:mx-auto lg:my-8" />
                     <div className="sm:flex sm:items-center sm:justify-between">
-                        <span className="text-sm text-gray-500 sm:text-center">
+                        <span className="text-sm text-gray-500 sm:text-center text-white">
                             © 2025 . 
-                            <a href="https://github.com/soham408" className="font-serif hover:underline">
+                            <a href="https://github.com/soham408" className=" font-serif hover:underline">
                                  SohamBambade
                             </a>
                             . All Rights Reserved.

@@ -1,4 +1,5 @@
 import React from 'react';
+import { TypeAnimation } from 'react-type-animation'
 // import imgHome from './Images/HomeComponent.png'
 
 
@@ -6,10 +7,29 @@ import React from 'react';
     return (
         
             <>
-                  <div className=''>
-                        <h1 className='grid place-items-center pt-[20%]'>WELCOME</h1>
-
+            
+                  <div className='text-white font-serif '>
+                  <div className='grid place-content-center p-[12%]'>
+                        <TypeAnimation
+                        sequence={[
+                              "I am Web Developer",
+                              1000,
+                              "I am Software Developer",
+                              1000,
+                              "I am Tech Enthusiast",
+                              1000     
+                        ]}
+                        wrapper="span"
+                        speed={30}
+                        className="text-6xl font-bold"
+                        repeat={Infinity}
+                        />
                   </div>
+                  </div>
+                  {/* <div className=''>
+                        <h1 className='text-[#F1FAEE] grid place-items-center pt-[20%] pb-[4%] text-9xl font-serif animate-bounce animate-slidein300'>WELCOME</h1>
+
+                  </div> */}
 
 
 
