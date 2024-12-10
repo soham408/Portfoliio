@@ -1,23 +1,6 @@
 import React, { useState } from 'react';
 import { useEffect } from 'react'
 import { useLoaderData } from 'react-router-dom';
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card"
-import * as React from "react"
-
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
-
-
-
-
-
 
 
 function Github() {
@@ -36,56 +19,38 @@ function Github() {
 
   return (
     <>
-    {/* <div className='flex space-x-4 flex-center justify-center pt-[200px] pb-[100px]'>
+     {/* <div className='flex space-x-4 flex-center justify-center pt-[200px] pb-[100px]'>
      <div className='font-serif flex items-center justify-center text-[white] p-4 rounded-xl grid flex-col'>
-    <div className='text-white'> Name  : {data.name} </div>
-    <div className='text-white'> Twitter Username  : {data.twitter_username} </div>
+     <div className='text-white'> Name  : {data.name} </div>
+     <div className='text-white'> Twitter Username  : {data.twitter_username} </div>
      <div className='text-white'> Github Followers : {data.followers} </div>
      <div className='text-white'> Github followings : {data.following} </div>
-      </div>
+     </div>
 
-     <div className='flex items-center justify-center grid  space-x-4'>
+      <div className='flex items-center justify-center grid  space-x-4'>
       <img className='rounded-xl w-[220px] m-6' src={data.avatar_url} alt="Git Image"  />
       </div>
-      </div> */}
-
-
-<Card className="w-[350px]">
-      <CardHeader>
-        <CardTitle>Create project</CardTitle>
-        <CardDescription>Deploy your new project in one-click.</CardDescription>
-      </CardHeader>
-      <CardContent>
-        <form>
-          <div className="grid w-full items-center gap-4">
-            <div className="flex flex-col space-y-1.5">
-              <Label htmlFor="name">Name</Label>
-              <Input id="name" placeholder="Name of your project" />
-            </div>
-            <div className="flex flex-col space-y-1.5">
-              <Label htmlFor="framework">Framework</Label>
-              <Select>
-                <SelectTrigger id="framework">
-                  <SelectValue placeholder="Select" />
-                </SelectTrigger>
-                <SelectContent position="popper">
-                  <SelectItem value="next">Next.js</SelectItem>
-                  <SelectItem value="sveltekit">SvelteKit</SelectItem>
-                  <SelectItem value="astro">Astro</SelectItem>
-                  <SelectItem value="nuxt">Nuxt.js</SelectItem>
-                </SelectContent>
-              </Select>
-            </div>
-          </div>
-        </form>
-      </CardContent>
-      <CardFooter className="flex justify-between">
-        <Button variant="outline">Cancel</Button>
-        <Button>Deploy</Button>
-      </CardFooter>
-    </Card>
-
-
+      </div>  */}
+      <div className='pt-[20%]'>
+        <div className='flex items-center'>
+      <figure className="md:flex bg-slate-500 rounded-xl p-8 md:p-0 dark:bg-slate-800 mx-auto w-1/1">
+  <img className="w-24 h-24 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto " src={data.avatar_url} alt="" width="384" height="512"/>
+  <div className="pt-6 md:p-8 text-center md:text-left space-y-4">
+    <blockquote>
+      <p className="text-lg font-medium pr-[700px]">
+      <div > Name  : {data.name} </div>
+     <div > Twitter Username  : {data.twitter_username} </div>
+     <div > Github Followers : {data.followers} </div>
+     <div > Github followings : {data.following} </div>
+      </p>
+    </blockquote>
+    <figcaption className="font-medium">
+     
+    </figcaption>
+  </div>
+</figure> 
+</div>
+</div>
  </>
   )
  }
